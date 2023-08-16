@@ -1,17 +1,12 @@
-// script.js
+var grid = document.querySelector('.masonry-grid');
 
-// Poczekaj, aż dokument HTML zostanie całkowicie załadowany
-document.addEventListener("DOMContentLoaded", function() {
-    // Znajdź przycisk w sekcji głównej
-    const button = document.querySelector(".jumbotron button");
-  
-    // Znajdź nagłówek sekcji głównej
-    const jumbotron = document.querySelector(".jumbotron");
-  
-    // Ustaw obsługę zdarzenia na kliknięcie przycisku
-    button.addEventListener("click", function() {
-      // Zmień kolor tła nagłówka po kliknięciu przycisku
-      jumbotron.style.backgroundColor = "lightblue";
-    });
-  });
-  
+var msnry = new Masonry( grid, {
+  itemSelector: '.masonry-grid-item',
+  columnWidth: '.masonry-grid-sizer',
+  gutter: '.masonry-gutter-sizer',
+  percentPosition: true,
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  msnry.layout();
+});

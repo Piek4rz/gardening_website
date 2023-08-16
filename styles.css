@@ -1,37 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Inter:400,500,700|Montserrat:400,500,700&display=swap);
 
-footer {
-    font-size: 14px;
+  
+  .masonry-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+    
+  .masonry-grid-sizer,
+  .masonry-grid-item {
+    width: 31.33%;
+    margin-bottom: 42px;
+
+  }
+
+  .masonry-gutter-sizer {
+    width: 3%;
   }
   
+  .masonry-grid-item {
+    float: left;
 
-  .hero-block {
-    background-color: #DCC1AB;
-    color: black;
   }
-
-
-  .offer-card{
-    border-color: none;
-    border-radius: 28px;
-    background-color: white;
+  
+  .masonry-grid-item img {
+    max-width: 100%;
   }
-
-  .green-underline {
-    color: green;
-    position: relative;
-    text-decoration: none; 
-    display: inline-block; 
-  }
-
-  .green-underline::after {
-    content: ""; 
-    position: absolute;
-    left: 0;
-    bottom: -3px; 
-    width: 100%;
-    height: 1px; 
-    background-color: green;
-  }
+  
+  
