@@ -949,6 +949,14 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/assets\/images\/titlePhoto\.jpg\'\)\] {
+  background-image: url('./assets/images/titlePhoto.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/businessPhoto\.jpg\'\)\] {
+  background-image: url('./assets/images/businessPhoto.jpg');
+}
+
 .from-beige {
   --tw-gradient-from: #DCC1AB var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(220 193 171 / 0) var(--tw-gradient-to-position);
@@ -1103,12 +1111,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.pl-\[7rem\] {
-  padding-left: 7rem;
-}
-
-
-
 .pt-2\.5 {
   padding-top: 0.625rem;
 }
@@ -1121,70 +1123,8 @@ video {
   padding-top: 1rem;
 }
 
-.pt-\[120px\] {
-  padding-top: 120px;
-}
-
-.pt-\[62px\] {
-  padding-top: 62px;
-}
-
-
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.text-start {
-  text-align: start;
-}
-
-.text-end {
-  text-align: end;
-}
-
-.align-baseline {
-  vertical-align: baseline;
-}
-
-.align-top {
-  vertical-align: top;
-}
-
-.align-middle {
-  vertical-align: middle;
-}
-
-.align-bottom {
-  vertical-align: bottom;
-}
-
-.align-text-top {
-  vertical-align: text-top;
-}
-
-.align-text-bottom {
-  vertical-align: text-bottom;
-}
-
-.align-sub {
-  vertical-align: sub;
-}
-
-.align-super {
-  vertical-align: super;
+.pt-\[7\.5rem\] {
+  padding-top: 7.5rem;
 }
 
 .font-inter {
