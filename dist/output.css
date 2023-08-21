@@ -937,24 +937,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/assets\/images\/businessPhoto\.jpg\'\)\] {
-  background-image: url('../assets/images/businessPhoto.jpg');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/titlePhoto\.jpg\'\)\] {
-  background-image: url('../assets/images/titlePhoto.jpg');
-}
-
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+.bg-\[url\(\'\.\/assets\/images\/businessPhoto\.jpg\'\)\] {
+  background-image: url('./assets/images/businessPhoto.jpg');
 }
 
 .bg-\[url\(\'\.\/assets\/images\/titlePhoto\.jpg\'\)\] {
   background-image: url('./assets/images/titlePhoto.jpg');
 }
 
-.bg-\[url\(\'\.\/assets\/images\/businessPhoto\.jpg\'\)\] {
-  background-image: url('./assets/images/businessPhoto.jpg');
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .from-beige {
