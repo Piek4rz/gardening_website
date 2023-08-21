@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:400,500,700|Montserrat:400,500,700&display=swap);
 
   
+/* Masonry layout */
   .masonry-grid:after {
     content: '';
     display: block;
@@ -23,11 +24,88 @@
   
   .masonry-grid-item {
     float: left;
-
   }
   
   .masonry-grid-item img {
     max-width: 100%;
   }
-  
-  
+
+
+
+/* Search bar */
+.search {
+    transition: width 0.3s ease-in-out;
+}
+
+.search-input {
+    width: 0;
+    background-color: transparent;
+    transition: width 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;  
+    border-top: 1px solid transparent;  
+    padding: 5px 0;
+}
+
+.search.active .search-input {
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-left: 10px;
+  } 
+
+
+
+/* button animations */
+
+  .bounce-animation {
+    animation: bounce-in-left 1s ease;
+  }
+
+
+@keyframes bounce-in-left {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-40px); 
+  }
+  60% {
+    transform: translateX(-10px); 
+  }
+}
+
+@keyframes bounce-in {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(20px); 
+  }
+  60% {
+    transform: translateX(5px);
+  }
+}
+
+
+.hover-anim:hover .anim-right{
+  animation: bounce-in 1s ease;
+}
+
+.anim-bottom{
+  rotate: 90deg;
+}
+
+.hover-anim:hover .anim-bottom{
+  animation: bounce-in 1s ease;
+}
+
+
+.hover-anim:hover .svg-hover {
+  fill: #1B5B31;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.5);
+  backdrop-filter: blur(5px); 
+}
+
