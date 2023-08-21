@@ -53,6 +53,10 @@
     margin-left: 10px;
   } 
 
+.activate{
+  display: block;
+}
+
 
 
 /* button animations */

@@ -23,6 +23,66 @@ function showList() {
   document.getElementById("options").classList.remove("hidden");
 }
 
+const slideButton = document.getElementById("slide-button");
+const slideContainer = document.querySelector(".slide-container");
+const slideItems = document.querySelectorAll(".slide-item");
+
+function toggleSlide() {
+  const slideContainer = document.querySelector(".slide-container");
+  const slideItems = document.querySelectorAll(".slide-item");
+
+  slideContainer.classList.toggle("active");
+
+  if (slideContainer.classList.contains("active")) {
+    slideItems.forEach(item => item.style.display = "block");
+    slideContainer.style.height = `${slideItems.length * 40}px`; // Adjust the height as needed
+  } else {
+    slideItems.forEach(item => item.style.display = "none");
+    slideContainer.style.height = "0";
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // open
+  const burger = document.querySelectorAll('.navbar-burger');
+  const menu = document.querySelectorAll('.navbar-menu');
+
+  if (burger.length && menu.length) {
+      for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', function() {
+              for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle('hidden');
+              }
+          });
+      }
+  }
+
+  // close
+  const close = document.querySelectorAll('.navbar-close');
+  const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+  if (close.length) {
+      for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener('click', function() {
+              for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle('hidden');
+              }
+          });
+      }
+  }
+
+  if (backdrop.length) {
+      for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener('click', function() {
+              for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle('hidden');
+              }
+          });
+      }
+  }
+});
+
 // Slider
 
 var mySwiper = new Swiper(".swiper-container", {
