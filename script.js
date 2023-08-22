@@ -23,9 +23,6 @@ function showList() {
   document.getElementById("options").classList.remove("hidden");
 }
 
-
-
-
 const slideButton = document.getElementById("slide-button");
 const slideContainer = document.querySelector(".slide-container");
 const slideItems = document.querySelectorAll(".slide-item");
@@ -37,72 +34,82 @@ function toggleSlide() {
   slideContainer.classList.toggle("active");
 
   if (slideContainer.classList.contains("active")) {
-    slideItems.forEach(item => item.style.display = "block");
+    slideItems.forEach((item) => (item.style.display = "block"));
     slideContainer.style.height = `${slideItems.length * 40}px`;
   } else {
-    slideItems.forEach(item => item.style.display = "none");
+    slideItems.forEach((item) => (item.style.display = "none"));
     slideContainer.style.height = "0";
   }
 }
 
+// open mobile menu
 
-  // open mobile menu
+const burger = document.querySelectorAll(".navbar-burger");
+const menu = document.querySelectorAll(".navbar-menu");
 
-  const burger = document.querySelectorAll('.navbar-burger');
-  const menu = document.querySelectorAll('.navbar-menu');
-
-  if (burger.length && menu.length) {
-      for (var i = 0; i < burger.length; i++) {
-          burger[i].addEventListener('click', function() {
-              for (var j = 0; j < menu.length; j++) {
-                  menu[j].classList.toggle('hidden');
-              }
-          });
+if (burger.length && menu.length) {
+  for (var i = 0; i < burger.length; i++) {
+    burger[i].addEventListener("click", function () {
+      for (var j = 0; j < menu.length; j++) {
+        menu[j].classList.toggle("hidden");
       }
+    });
   }
+}
 
-  // close mobile menu
+// close mobile menu
 
-  const close = document.querySelectorAll('.navbar-close');
-  const backdrop = document.querySelectorAll('.navbar-backdrop');
+const close = document.querySelectorAll(".navbar-close");
+const backdrop = document.querySelectorAll(".navbar-backdrop");
 
-  if (close.length) {
-      for (var i = 0; i < close.length; i++) {
-          close[i].addEventListener('click', function() {
-              for (var j = 0; j < menu.length; j++) {
-                  menu[j].classList.toggle('hidden');
-              }
-          });
+if (close.length) {
+  for (var i = 0; i < close.length; i++) {
+    close[i].addEventListener("click", function () {
+      for (var j = 0; j < menu.length; j++) {
+        menu[j].classList.toggle("hidden");
       }
+    });
   }
+}
 
-  if (backdrop.length) {
-      for (var i = 0; i < backdrop.length; i++) {
-          backdrop[i].addEventListener('click', function() {
-              for (var j = 0; j < menu.length; j++) {
-                  menu[j].classList.toggle('hidden');
-              }
-          });
+if (backdrop.length) {
+  for (var i = 0; i < backdrop.length; i++) {
+    backdrop[i].addEventListener("click", function () {
+      for (var j = 0; j < menu.length; j++) {
+        menu[j].classList.toggle("hidden");
       }
+    });
   }
+}
 
 // Scroll to section buttons
 
 function scrollToProjects() {
-  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+  scrollIntoViewWithOffset("#projects");
 }
 
 function scrollToBusiness() {
-  document.getElementById("business").scrollIntoView({ behavior: "smooth" });
+  scrollIntoViewWithOffset("#business");
 }
 
 function scrollToOffer() {
-  document.getElementById("offer").scrollIntoView({ behavior: "smooth" });
+  scrollIntoViewWithOffset("#offer");
 }
 
-function scrollToContact(){
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+function scrollToContact() {
+  scrollIntoViewWithOffset("#contact");
 }
+
+const scrollIntoViewWithOffset = (selector) => {
+  var offset = document.querySelector(".navbar").offsetHeight;
+  window.scrollTo({
+    behavior: "smooth",
+    top:
+      document.querySelector(selector).getBoundingClientRect().top -
+      document.body.getBoundingClientRect().top -
+      offset,
+  });
+};
 
 // Slider
 
