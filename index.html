@@ -178,90 +178,94 @@
       </nav>
     </div>
 
-    <div class="swiper-container swiper bg-[#DCC1AB] h-[46.25rem] relative">
+    <div
+      class="swiper-container swiper bg-[#DCC1AB] h-[calc(100vh-80px)] md:h-[46.25rem] relative"
+    >
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div
-            class="grid grid-cols-12 gap-x-8 lg:mx-[89px] lg:pt-[7.5rem] lg:gap-x-16"
+            class="md:w-1/2 lg:w-[calc(50%-120px)] lg:mx-[89px] lg:pt-[7.5rem]"
           >
-            <div class="col-start-1 col-span-6 p-12 lg:p-0">
+            <div
+              class="flex flex-col px-12 pt-24 max-[512px]:pt-8 md:block md:pt-28 lg:p-0"
+            >
               <p
-                class="font-medium pb-11 font-montserrat text-4xl lg:text-6xl lg:leading-[70px]"
+                class="font-medium md:pb-11 font-montserrat text-2xl md:text-4xl lg:text-6xl lg:leading-[70px]"
               >
                 Nowoczesna aranżacja Twojego ogrodu
               </p>
               <div class="grid grid-cols-6 col-span-5 gap-x-8 lg:gap-x-16">
-                <p class="pb-[4.5rem] col-span-5">
+                <p
+                  class="py-2 md:pb-[4.5rem] col-span-5 text-xs sm:text-sm md:text-base md:pl-0"
+                >
                   Marka GiardDesign to wieloletnie doświadczenie i wysoka
                   estetyka realizacji. Oferujemy kompleksowy zakres usług z
                   indywidualnym podejściem do każdego projektu.
                 </p>
               </div>
-
-              <div class="flex gap-x-9 gap-y-2 relative flex-wrap">
-                <button
-                  class="rounded-full bg-green hover:bg-greenLight text-grey px-6 pt-3 pb-[14px] min-w-[200px]"
-                >
-                  Skontaktuj się z nami
-                </button>
-                <button
-                  class="flex items-center justify-center rounded-full bg-transparent min-w-[200px] hover:text-greenLight text-green border-green hover:border-greenLight border pt-3 pb-[14px] px-[22px] hover-anim"
-                >
-                  <span>Zobacz nasze realizacje</span>
-                  <img
-                    src="./assets/images/arrowButton.svg"
-                    class="ml-2 anim-bottom"
-                  />
-                </button>
-              </div>
             </div>
-            <div class="flex-1"></div>
+            <div class="px-12 flex gap-x-9 gap-y-2 relative flex-wrap lg:p-0">
+              <button
+                class="text-sm p-2 rounded-full bg-green hover:bg-greenLight text-grey sm:text-base sm:px-6 sm:pt-3 sm:pb-[14px] sm:min-w-[200px] sm:max-h-[70px]"
+              >
+                Skontaktuj się z nami
+              </button>
+              <button
+                class="text-sm p-2 flex items-center justify-center rounded-full bg-transparent hover:text-greenLight text-green border-green hover:border-greenLight border sm:text-base sm:min-w-[200px] sm:max-h-[70px] sm:pt-3 sm:pb-[14px] sm:px-[22px] hover-anim"
+              >
+                <span>Zobacz nasze realizacje</span>
+                <img
+                  src="./assets/images/arrowButton.svg"
+                  class="ml-2 anim-bottom"
+                />
+              </button>
+            </div>
           </div>
 
           <div
-            class="absolute flex bg-cover bg-no-repeat bg-center rotate-180 transform -scale-y-100 top-0 bottom-0 right-0 left-1/2 bg-[url('./assets/images/titlePhoto.jpg')]"
+            class="absolute flex bg-cover bg-no-repeat bg-center rotate-180 transform -scale-y-100 top-1/2 bottom-0 left-0 right-0 md:top-0 md:left-[calc(50%+32px)] bg-[url('./assets/images/titlePhoto.jpg')]"
           ></div>
         </div>
         <div class="swiper-slide">
           <div
-            class="grid grid-cols-12 gap-x-8 lg:mx-[89px] lg:pt-[7.5rem] lg:gap-x-16"
+            class="md:w-1/2 lg:w-[calc(50%-120px)] lg:mx-[89px] lg:pt-[7.5rem]"
           >
-            <div class="col-start-1 col-span-6 p-12 lg:p-0">
+            <div
+              class="flex flex-col px-12 pt-24 max-[512px]:pt-8 md:block md:pt-28 lg:p-0"
+            >
               <p
                 class="font-medium pb-11 font-montserrat text-4xl lg:text-6xl lg:leading-[70px]"
               >
                 Nowoczesna aranżacja Twojego ogrodu
               </p>
               <div class="grid grid-cols-6 col-span-5 gap-x-8 lg:gap-x-16">
-                <p class="pb-[4.5rem] col-span-5">
+                <p class="pb-[4.5rem] col-span-5 text-sm md:text-base md:pl-0">
                   Marka GiardDesign to wieloletnie doświadczenie i wysoka
                   estetyka realizacji. Oferujemy kompleksowy zakres usług z
                   indywidualnym podejściem do każdego projektu.
                 </p>
               </div>
-
-              <div class="flex gap-9 relative flex-col lg:flex-row">
-                <button
-                  class="rounded-full bg-green hover:bg-greenLight text-grey px-6 pt-3 pb-[14px]"
-                >
-                  Skontaktuj się z nami
-                </button>
-                <button
-                  class="flex items-center justify-center rounded-full bg-transparent hover:text-greenLight text-green border-green hover:border-greenLight border pt-3 pb-[14px] px-[22px] hover-anim"
-                >
-                  <span>Zobacz nasze realizacje</span>
-                  <img
-                    src="./assets/images/arrowButton.svg"
-                    class="ml-2 anim-bottom"
-                  />
-                </button>
-              </div>
             </div>
-            <div class="flex-1"></div>
+            <div class="px-12 flex gap-x-9 gap-y-2 relative flex-wrap lg:p-0">
+              <button
+                class="rounded-full bg-green hover:bg-greenLight text-grey px-6 pt-3 pb-[14px] min-w-[200px] max-h-[70px]"
+              >
+                Skontaktuj się z nami
+              </button>
+              <button
+                class="flex items-center justify-center rounded-full bg-transparent min-w-[200px] max-h-[70px] hover:text-greenLight text-green border-green hover:border-greenLight border pt-3 pb-[14px] px-[22px] hover-anim"
+              >
+                <span>Zobacz nasze realizacje</span>
+                <img
+                  src="./assets/images/arrowButton.svg"
+                  class="ml-2 anim-bottom"
+                />
+              </button>
+            </div>
           </div>
 
           <div
-            class="absolute flex bg-cover bg-no-repeat bg-center rotate-180 transform -scale-y-100 top-0 bottom-0 right-0 left-1/2 bg-[url('./assets/images/titlePhoto.jpg')]"
+            class="absolute flex bg-cover bg-no-repeat bg-center rotate-180 transform -scale-y-100 top-1/2 bottom-0 left-0 right-0 md:top-0 md:left-[calc(50%+32px)] bg-[url('./assets/images/titlePhoto.jpg')]"
           ></div>
         </div>
       </div>
@@ -280,8 +284,8 @@
     </div>
 
     <section class="bg-grey">
-      <div class="mx-[89px] pb-40">
-        <div class="mx-[89px] pt-[7.5rem] pb-24 lg:pl-28">
+      <div class="mx-12 sm:mx-[89px] pb-40">
+        <div class="md:mx-[89px] pt-[7.5rem] pb-24 lg:pl-28">
           <p class="text-green pb-2">Oferta</p>
           <p class="pb-8 text-3xl lg:text-5xl">
             <span class="font-montserrat">Działamy</span>
@@ -372,21 +376,106 @@
       </div>
     </section>
 
-    <section class="bg-green text-grey h-[45rem] relative">
-      <div
-        class="absolute bg-cover bg-no-repeat bg-center transform -scale-x-100 top-0 bottom-0 left-0 right-[calc(50%+32px)] bg-[url('./assets/images/businessPhoto.jpg')]"
-      ></div>
+    <!-- <div class="swiper-slide">
+          <div
+            class="md:w-1/2 lg:w-[calc(50%-120px)] lg:mx-[89px] lg:pt-[7.5rem]"
+          >
+            <div
+              class="flex flex-col px-12 pt-24 max-[512px]:pt-8 md:block md:pt-28 lg:p-0"
+            >
+              <p
+                class="font-medium pb-11 font-montserrat text-4xl lg:text-6xl lg:leading-[70px]"
+              >
+                Nowoczesna aranżacja Twojego ogrodu
+              </p>
+              <div class="grid grid-cols-6 col-span-5 gap-x-8 lg:gap-x-16">
+                <p class="pb-[4.5rem] col-span-5 text-sm md:text-base md:pl-0">
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                  indywidualnym podejściem do każdego projektu.
+                </p>
+              </div>
+            </div>
+            <div class="px-12 flex gap-x-9 gap-y-2 relative flex-wrap lg:p-0">
+              <button
+                class="rounded-full bg-green hover:bg-greenLight text-grey px-6 pt-3 pb-[14px] min-w-[200px] max-h-[70px]"
+              >
+                Skontaktuj się z nami
+              </button>
+              <button
+                class="flex items-center justify-center rounded-full bg-transparent min-w-[200px] max-h-[70px] hover:text-greenLight text-green border-green hover:border-greenLight border pt-3 pb-[14px] px-[22px] hover-anim"
+              >
+                <span>Zobacz nasze realizacje</span>
+                <img
+                  src="./assets/images/arrowButton.svg"
+                  class="ml-2 anim-bottom"
+                />
+              </button>
+            </div>
+          </div>
 
+          <div
+            class="absolute flex bg-cover bg-no-repeat bg-center rotate-180 transform -scale-y-100 top-1/2 bottom-0 left-0 right-0 md:top-0 md:left-[calc(50%+32px)] bg-[url('./assets/images/titlePhoto.jpg')]"
+          ></div>
+        </div>
+         <div class="swiper-slide">
+          <div
+            class="md:w-1/2 lg:w-[calc(50%-120px)] lg:mx-[89px] lg:pt-[7.5rem]"
+          >
+            <div
+              class="flex flex-col px-12 pt-24 max-[512px]:pt-8 md:block md:pt-28 lg:p-0"
+            >
+              <p
+                class="font-medium pb-11 font-montserrat text-4xl lg:text-6xl lg:leading-[70px]"
+              >
+                Nowoczesna aranżacja Twojego ogrodu
+              </p>
+              <div class="grid grid-cols-6 col-span-5 gap-x-8 lg:gap-x-16">
+                <p class="pb-[4.5rem] col-span-5 text-sm md:text-base md:pl-0">
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                  indywidualnym podejściem do każdego projektu.
+                </p>
+              </div>
+            </div>
+            <div class="px-12 flex gap-x-9 gap-y-2 relative flex-wrap lg:p-0">
+              <button
+                class="rounded-full bg-green hover:bg-greenLight text-grey px-6 pt-3 pb-[14px] min-w-[200px] max-h-[70px]"
+              >
+                Skontaktuj się z nami
+              </button>
+              <button
+                class="flex items-center justify-center rounded-full bg-transparent min-w-[200px] max-h-[70px] hover:text-greenLight text-green border-green hover:border-greenLight border pt-3 pb-[14px] px-[22px] hover-anim"
+              >
+                <span>Zobacz nasze realizacje</span>
+                <img
+                  src="./assets/images/arrowButton.svg"
+                  class="ml-2 anim-bottom"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="absolute flex bg-cover bg-no-repeat bg-center rotate-180 transform -scale-y-100 top-1/2 bottom-0 left-0 right-0 md:top-0 md:left-[calc(50%+32px)] bg-[url('./assets/images/titlePhoto.jpg')]"
+          ></div>
+        </div> -->
+
+    <section
+      class="bg-green text-grey h-[120vh] sm:h-[calc(100vh-80px)] md:h-[45rem] relative"
+    >
       <div
-        class="mx-[89px] pb-40 px-0 grid grid-cols-12 pt-20 md:pt-[7.5rem] gap-x-8 lg:gap-x-16"
+        class="p-8 sm:px-0 sm:mx-[89px] sm:pb-40 sm:pt-20 md:flex md:flex-col md:items-end lg:pt-[7.5rem]"
       >
-        <div class="col-start-7 col-span-6 pl-[16%]">
-          <p class="text-sm pb-4 leading-[115%]">O firmie</p>
-          <p class="font-medium pb-10 text-3xl lg:text-5xl">
+        <div class="md:pl-16 lg:pl-24 md:w-1/2">
+          <p class="text-sm pb-2 sm:pb-4 leading-[115%]">O firmie</p>
+          <p class="font-medium pb-2 sm:pb-10 text-2xl sm:text-3xl lg:text-5xl">
             <span class="font-montserrat">Tworzymy<br />z</span>
             <span class="italic">pasją</span>
           </p>
-          <p class="leading-normal pb-8 lg:pb-[4.5rem] text-sm md:text-base">
+          <p
+            class="leading-normal pb-8 lg:pb-[4.5rem] text-xs sm:text-sm md:text-base"
+          >
             Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
             wykwalifikowani projektanci oraz architekci, których zadaniem jest
             rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
@@ -403,12 +492,15 @@
           </button>
         </div>
       </div>
+      <div
+        class="absolute bg-cover bg-no-repeat bg-center transform -scale-x-100 bottom-0 left-0 top-1/2 right-0 md:top-0 md:right-[calc(50%+32px)] bg-[url('./assets/images/businessPhoto.jpg')]"
+      ></div>
     </section>
 
     <section class="bg-beige">
-      <div class="mx-40">
-        <p class="text-green text-sm pt-[7.5rem] pb-4">Realizacje</p>
-        <p class="font-medium pb-24 text-3xl lg:text-5xl">
+      <div class="px-8 md:mx-40">
+        <p class="text-green text-sm pt-16 lg:pt-[7.5rem] pb-4">Realizacje</p>
+        <p class="font-medium pb-12 text-3xl lg:pb-24 lg:text-5xl">
           <span class="font-montserrat">Nasze </span>
           <span class="italic">projekty</span>
         </p>
@@ -455,12 +547,12 @@
     </section>
 
     <section class="bg-grey py-[3.75rem]">
-      <div class="mx-[89px] text-grey">
+      <div class="mx-12 sm:mx-[89px] text-grey">
         <div
-          class="px-28 bg-green py-[7.5rem] flex justify-between flex-wrap gap-6 lg:mx-28"
+          class="bg-green p-16 flex justify-between flex-wrap gap-6 md:px-28 md:py-[7.5rem] lg:mx-28"
         >
           <div
-            class="leading-[120%] tracking-[-2px] text-3xl lg:text-[40px] flex"
+            class="leading-[120%] tracking-[-2px] text-xl md:text-3xl lg:text-[40px] flex"
           >
             <div class="justify-end">
               <span class="font-montserrat"
@@ -486,7 +578,7 @@
     </section>
 
     <footer class="bg-black text-grey">
-      <div class="mx-[89px] lg:px-28">
+      <div class="mx-12 sm:mx-[89px] lg:px-28">
         <div class="col-start-2 col-span-10 py-20">
           <div
             class="flex justify-between pb-16 border-b border-b-grey flex-col lg:flex-row"
@@ -494,7 +586,7 @@
             <div class="flex items-center">
               <p><img src="./assets/images/giarddesign-white.png" /></p>
             </div>
-            <div class="flex gap-6 items-center pt-4 lg:pt-0">
+            <div class="flex flex-wrap gap-6 items-center pt-4 lg:pt-0">
               <p>Daj znać, co możemy dla Ciebie zrobić!</p>
               <button
                 class="rounded-full bg-green hover:bg-greenLight text-grey px-6 pt-3 pb-[14px]"
@@ -507,19 +599,19 @@
           <div
             class="pt-16 pb-[7.5rem] flex justify-between text-sm flex-col lg:flex-row"
           >
-            <ul class="flex gap-x-6 lg:gap-x-12">
+            <ul class="flex flex-wrap gap-x-6 lg:gap-x-12">
               <li><a href="#">Kontakt </a></li>
               <li><a href="#">Instagram</a></li>
               <li><a href="#">Facebook</a></li>
               <li><a href="#">LinkedIn</a></li>
             </ul>
-            <ul class="flex gap-x-6 pt-2 lg:gap-x-12 lg:pt-0">
+            <ul class="flex flex-col gap-x-6 pt-2 lg:gap-x-12 lg:pt-0">
               <li><a href="#">000-000-000</a></li>
               <li><a href="#">giarddesign@kontakt.pl</a></li>
             </ul>
           </div>
 
-          <div class="flex justify-between">
+          <div class="flex flex-wrap justify-between">
             <p>Prawa zastrzeżone &copy; 2022</p>
             <ul class="flex gap-x-4">
               <li><p class="flex">Made by</p></li>

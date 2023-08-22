@@ -154,7 +154,7 @@ async function fetchGardenImages(page) {
 
 // Modal popup
 function openImageModal(imageUrl) {
-  dialogElement.className = "modal w-10/12 focus:outline-0 overflow-hidden";
+  dialogElement.className = "modal w-10/12 focus:outline-0";
   dialogElement.innerHTML = `
     <div class="w-full  modal-dialog px-24 py-2 h-[90vh]">
     <div class="flex top-0 justify-between pt-4">
@@ -169,7 +169,7 @@ function openImageModal(imageUrl) {
           </div>
         </div>
  
-        <div class="flex items-center justify-between h-[80%] w-full">
+        <div class="flex flex-wrap items-center justify-between h-[80%] w-full">
               <div id="dialog-div" class="flex flex-1 justify-center items-center w-full h-full bg-no-repeat bg-contain bg-center"></div>
               <div class="flex flex-col pl-24 w-full h-full flex-1 justify-center">
                   <div class="text-sm text-darkGrey">Galeria</div>
