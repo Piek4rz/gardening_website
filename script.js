@@ -156,28 +156,25 @@ async function fetchGardenImages(page) {
 function openImageModal(imageUrl) {
   dialogElement.className = "modal w-10/12 focus:outline-0";
   dialogElement.innerHTML = `
-    <div class="w-full  modal-dialog px-24 py-2 h-[90vh]">
-    <div class="flex top-0 justify-between pt-4">
-          <div class="mb-6">
-            <span class="text-lg">Nazwa projektu</span>
-            <span class="text-sm text-darkGrey "><br>Opis</span>
-          </div>
-          <div class="flex items-center">
-            <button id="close-button" class="focus:outline-0">
-              <img src="./assets/images/closeIcon.svg" class="w-4"/>
-            </button>
-          </div>
+    <div class="w-full modal-dialog px-4 md:px-20 lg:px-24 py-2 h-[90vh]">
+      <div class="flex top-0 justify-between pt-4">
+        <div class="mb-6">
+          <span class="text-lg">Nazwa projektu</span>
+          <span class="text-sm text-darkGrey "><br>Opis</span>
         </div>
- 
-        <div class="flex flex-wrap items-center justify-between h-[80%] w-full">
-              <div id="dialog-div" class="flex flex-1 justify-center items-center w-full h-full bg-no-repeat bg-contain bg-center"></div>
-              <div class="flex flex-col pl-24 w-full h-full flex-1 justify-center">
-                  <div class="text-sm text-darkGrey">Galeria</div>
-                  <div id="grid-container" class="grid grid-cols-3 gap-2 [&>*]:aspect-square [&>*]:bg-darkGrey [&>*:hover]:bg-grey"></div>
-                
-              </div>
+        <div class="flex items-center">
+          <button id="close-button" class="focus:outline-0">
+            <img src="./assets/images/closeIcon.svg" class="w-4"/>
+          </button>
         </div>
-      
+      </div>
+      <div class="flex flex-wrap gap-4 items-center justify-between h-[80%] w-full">
+        <div id="dialog-div" class="flex flex-1 justify-center items-center min-w-[200px] md:min-w-[400px] lg:min-w-[600px] w-full h-full bg-no-repeat bg-contain bg-center"></div>
+        <div class="flex flex-col w-full h-full flex-1 justify-center min-w-[200px] md:min-w-[400px] lg:min-w-[600px]">
+          <div class="text-sm text-darkGrey">Galeria</div>
+          <div id="grid-container" class="grid grid-cols-3 gap-2 [&>*]:aspect-square [&>*]:bg-darkGrey [&>*:hover]:bg-grey"></div>   
+        </div>
+      </div> 
     </div>
     `;
   const dialogDiv = document.getElementById("dialog-div");
