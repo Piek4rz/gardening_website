@@ -172,7 +172,7 @@ function openImageModal(imageUrl) {
         <div id="dialog-div" class="flex flex-1 justify-center items-center min-w-[200px] md:min-w-[400px] lg:min-w-[600px] w-full h-full bg-no-repeat bg-contain bg-center"></div>
         <div class="flex flex-col w-full h-full flex-1 justify-center min-w-[200px] md:min-w-[400px] md:max-w-[600px]">
           <div class="text-sm text-darkGrey">Galeria</div>
-          <div id="grid-container" class="grid grid-cols-3 gap-2 [&>*]:aspect-square [&>*]:bg-darkGrey [&>*:hover]:bg-grey"></div>   
+          <div id="grid-container" class="grid grid-cols-3  gap-2 [&>*]:aspect-[4/3] [&>*]:bg-darkGrey [&>*:hover]:bg-grey"></div>   
         </div>
       </div> 
     </div>
