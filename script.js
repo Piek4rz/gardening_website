@@ -23,6 +23,9 @@ function showList() {
   document.getElementById("options").classList.remove("hidden");
 }
 
+
+
+
 const slideButton = document.getElementById("slide-button");
 const slideContainer = document.querySelector(".slide-container");
 const slideItems = document.querySelectorAll(".slide-item");
@@ -35,7 +38,7 @@ function toggleSlide() {
 
   if (slideContainer.classList.contains("active")) {
     slideItems.forEach(item => item.style.display = "block");
-    slideContainer.style.height = `${slideItems.length * 40}px`; // Adjust the height as needed
+    slideContainer.style.height = `${slideItems.length * 40}px`;
   } else {
     slideItems.forEach(item => item.style.display = "none");
     slideContainer.style.height = "0";
@@ -43,8 +46,8 @@ function toggleSlide() {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  // open
+  // open mobile menu
+
   const burger = document.querySelectorAll('.navbar-burger');
   const menu = document.querySelectorAll('.navbar-menu');
 
@@ -58,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   }
 
-  // close
+  // close mobile menu
+
   const close = document.querySelectorAll('.navbar-close');
   const backdrop = document.querySelectorAll('.navbar-backdrop');
 
@@ -81,7 +85,24 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       }
   }
-});
+
+// Scroll to section buttons
+
+function scrollToProjects() {
+  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToBusiness() {
+  document.getElementById("business").scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToOffer() {
+  document.getElementById("offer").scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToContact(){
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
 
 // Slider
 
@@ -153,6 +174,7 @@ async function fetchGardenImages(page) {
 }
 
 // Modal popup
+
 function openImageModal(imageUrl) {
   dialogElement.className = "modal w-10/12 focus:outline-0";
   dialogElement.innerHTML = `
